@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elective Registration Tool</title>
+
+
+</head>
+
+<link rel="stylesheet" href="\css files\home.css">
+
+<body>
+    <h1>Web Application for Elective Registration</h1>
+    <div>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="files">Upload Stream Details as a CSV formatted file:</label>
+                <input type="file" id="files" class="form-control" accept=".csv" required />
+                <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="files">Upload Elective Details as a CSV formatted file:</label>
+                <input type="file" id="files" class="form-control" accept=".csv" required />
+                <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+            </div>
+            <br>
+        </form>
+
+    </div>
+
+    <br>
+    <div>
+        <h2>Upload Student data and sort accordingly</h2>
+        <form class="form-inline">
+
+            <div class="form-group">
+                <label for="files">IMechCS:</label>
+                <input type="file" id="files" class="form-control" accept=".csv" required />
+                <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+
+                <select name="download" onChange="download(this.value)">
+                    <option value="stream wise.pdf">CGPA SCORE</option>
+                    <option value="student wise.pdf">GATE SCORE</option>
+                    <select>
+                        <button type="submit" class="form-group" id="submit-file"
+                            class="btn btn-primary">Sort</button>
+
+
+            </div>
+
+    </div>
+<br>
+    <div>
+        <form class="form-inline">
+
+            <div class="form-group">
+                <label for="files">IMechIT:</label>
+                <input type="file" id="files" class="form-control" accept=".csv" required />
+                <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+
+                <select name="download" onChange="download(this.value)">
+                    <option value="stream wise.pdf">CGPA SCORE</option>
+                    <option value="student wise.pdf">GATE SCORE</option>
+                    <select>
+                      <button type="submit" class="form-group" id="submit-file"
+                            class="btn btn-primary">Sort</button>
+
+
+            </div>
+
+    </div>
+<br>
+    <div>
+        <form class="form-inline">
+
+            <div class="form-group">
+                <label for="files">IMechAI:</label>
+                <input type="file" id="files" class="form-control" accept=".csv" required />
+                <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+
+                <select name="download" onChange="download(this.value)">
+                    <option value="stream wise.pdf">CGPA SCORE</option>
+                    <option value="student wise.pdf">GATE SCORE</option>
+                    <select>
+                        <button type="submit" class="form-group" id="submit-file"
+                            class="btn btn-primary">Sort</button>
+
+
+            </div>
+
+    </div>
+
+<br>
+    <div>
+        <form class="form-inline">
+
+            <div class="form-group">
+                <label for="files">MCA III:</label>
+                <input type="file" id="files" class="form-control" accept=".csv" required />
+                <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+
+                <select name="download" onChange="download(this.value)">
+                    <option value="stream wise.pdf">CGPA SCORE</option>
+                    <option value="student wise.pdf">GATE SCORE</option>
+                    <select>
+                        <button type="submit" class="form-group" id="submit-file"
+                            class="btn btn-primary">Sort</button>
+
+
+            </div>
+
+    </div>
+<br>
+    <div>
+        <form class="form-inline">
+
+            <div class="form-group">
+                <label for="files">MCA V:</label>
+                <input type="file" id="files" class="form-control" accept=".csv" required />
+                <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+
+
+                <select name="download" onChange="download(this.value)">
+                    
+                    <option value="stream wise.pdf">CGPA SCORE</option>
+                    <option value="student wise.pdf">GATE SCORE</option>
+                    <select>
+                        <button type="submit" class="form-group" id="submit-file"
+                            class="btn btn-primary">Sort</button>
+
+
+            </div>
+
+    </div>
+<br>
+    <div>
+        <form class="form-inline">
+
+            <div class="form-group">
+                <label for="files">IMTECH:</label>
+                <input type="file" id="files" class="form-control" accept=".csv" required />
+                <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+
+                <select name="download" onChange="download(this.value)">
+                    <option value="stream wise.pdf">CGPA SCORE</option>
+                    <option value="student wise.pdf">GATE SCORE</option>
+                    <select>
+                        <button type="submit" class="form-group" id="submit-file"
+                            class="btn btn-primary">Sort</button>
+
+
+            </div>
+
+    </div>
+    <br>
+
+    <div class="form-group">
+<h2>Upload Elective Limits</h2>
+        <label for="files">Upload Elective Limits</label>
+        <input type="file" id="files" class="form-control" accept=".csv" required />
+        <button type="submit" class="form-group" id="submit-file" class="btn btn-primary">Upload File</button>
+
+    </div><br>
+<div>
+    <button type="submit" class=" " id="">Allocate all Once </button>
+   </div>
+<br>
+    <div>
+        <h2>Edit limits</h2>
+        IMechCS:<input type="text"> <button type="submit">Update</button> <button type="reset">Reset</button> <button
+            type="submit">Allocate</button><br>
+        IMechIT:<input type="text"> <button type="submit">Update</button> <button type="reset">Reset</button> <button
+            type="submit">Allocate</button><br>
+        IMechAI:<input type="text"> <button type="submit">Update</button> <button type="reset">Reset</button> <button
+            type="submit">Allocate</button><br>
+        MCA III:<input type="text"> <button type="submit">Update</button> <button type="reset">Reset</button> <button
+            type="submit">Allocate</button><br>
+        MCA V:<input type="text"> <button type="submit">Update</button> <button type="reset">Reset</button> <button
+            type="submit">Allocate</button><br>
+        IMTECH:<input type="text"> <button type="submit">Update</button> <button type="reset">Reset</button> <button
+            type="submit">Allocate</button><br>
+    </div>
+    <br>
+<div>
+    <button type="submit" class=" " id="">Allocate all Once </button>
+    <button>Allocate Manually</button>
+    <button>Download Sheet</button>
+</div>
+    <br>
+    </form>
+    <br>
+    <div>
+        <label for="cars">Download Reports by :</label>
+        <select name="download" onChange="download(this.value)">
+            <option value="stream wise.pdf">Stream Wise</option>
+            <option value="student wise.pdf">Student Wise</option>
+            <option value="strength.pdf">Strength Wise</option>
+
+            <select>
+
+                <button class="btn"><i class="fa fa-download"></i> Download</button>
+            </select>
+            </div>
+    </div>
+    <br>
+    <div>
+        <button type="submit" class=" " id="">Download all files</button>
+    </div>
+</body>
+
+</html>
